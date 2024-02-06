@@ -49,15 +49,16 @@ Description : Flex Layouts.
         body { margin: 0; padding: 0; }
         img { max-width: 100%; height: auto; }
         .container { 
-			/*I need some CSS codes.*/
+			width: 100%;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
-			/*I need some CSS codes.*/
+			margin: 0; 
+			padding: 0;
 		}
         .main { 
 			padding: 15px; 
-			/*I need some CSS codes.*/
+			padding: 15px;
 		}
         
         .news-item { padding: 10px; }
@@ -100,9 +101,12 @@ Description : Flex Layouts.
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
+			.row {
+				flex-direction: column;
+				width: 100%;
+			}
             .medium, .small {
 				width: 100%;
-				flex-direction: column;
 			 }
         }
     </style>
